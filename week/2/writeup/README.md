@@ -1,8 +1,8 @@
 Writeup 2 - OSINT (Open Source Intelligence)
 ======
 
-Name: *PUT YOUR NAME HERE*
-Section: *PUT YOUR SECTION NUMBER HERE*
+Name: Andrew Wollack
+Section: 0201
 
 I pledge on my honor that I have not given or received any unauthorized assistance on this assignment or examination.
 
@@ -27,9 +27,13 @@ Owns cornerstoneairlines
 
 @kruester1990 instagram lookup
 
+I really just googled the username and then looked at what sites he was one and then looked on big sites like facebook and instagram
+
 
 3. 
 142.93.118.186 reverse dns lookup
+
+I took the website and put it into a reverse dns lookup cause i needed the ip and had the domain
 
 
 4. 
@@ -39,17 +43,33 @@ Disallow: /secret
 
 CMSC389R-{fly_th3_sk1es_w1th_u5}
 
+I followed the steps described in class and on the powerpoint
+
 
 5. 
 http://142.93.117.193/ admin page on company site 
 
+just clicked through the site
 
 6. 
+canada and north america dnsdumpster
 
-canada dnsdumpster
-
+I followed the steps described in class and on the powerpoint
 
 7. 
+
+running ubuntu according to mxtoolbox and ssh banner
+
+I tried to use nmap for this, but it wasn't plausible what the os was, so I just looked at the ssh banner and confirmed it with mxtoolbox.
+
+8. *(BONUS)*
+
+flag in dump textfiles: CMSC389R-{dns-txt-erc0rd-ftw}
+
+homepage source
+CMSC389R-{h1dden_fl4g_in_s0urce}
+
+### Part 2 (55 pts)
 
 nmap
 
@@ -63,19 +83,8 @@ PORT      STATE SERVICE
 
 10010/tcp open  rxapi
 
-
-running ubuntu according to mxtoolbox
-
-8. *(BONUS)*
-
-flag in dump textfiles: CMSC389R-{dns-txt-erc0rd-ftw}
-
-homepage source
-CMSC389R-{h1dden_fl4g_in_s0urce}
-
-### Part 2 (55 pts)
-
 Username: kruegster
+
 Password: pokemon
 
 CMSC389R-{c0rn3rstone-air-27670}
