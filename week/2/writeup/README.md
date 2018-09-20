@@ -1,8 +1,8 @@
 Writeup 2 - OSINT (Open Source Intelligence)
 ======
 
-Name: *PUT YOUR NAME HERE*
-Section: *PUT YOUR SECTION NUMBER HERE*
+Name: Andrew Wollack
+Section: 0201
 
 I pledge on my honor that I have not given or received any unauthorized assistance on this assignment or examination.
 
@@ -16,43 +16,75 @@ Digital acknowledgement of honor pledge: *PUT YOUR NAME HERE*
 
 2. 
 https://stwity.com/kruegster1990/ twitter handle
+
 http://www.cornerstoneairlines.co/about.html from twitter
+
 https://pbs.twimg.com/profile_images/1028771026815995904/BVJ1ed66_400x400.jpg
+
 kruegster@tutanota.com
+
 Owns cornerstoneairlines
+
 @kruester1990 instagram lookup
+
+I really just googled the username and then looked at what sites he was one and then looked on big sites like facebook and instagram
+
 
 3. 
 142.93.118.186 reverse dns lookup
 
+I took the website and put it into a reverse dns lookup cause i needed the ip and had the domain
+
 
 4. 
 User-agent: *
+
 Disallow: /secret
+
 CMSC389R-{fly_th3_sk1es_w1th_u5}
-homepage source
-CMSC389R-{h1dden_fl4g_in_s0urce}
+
+I followed the steps described in class and on the powerpoint
+
+
 5. 
 http://142.93.117.193/ admin page on company site 
-6. 
-canada dnsdumpster
-flag in dump textfiles: CMSC389R-{dns-txt-erc0rd-ftw}
-7. 
-nmap
-PORT      STATE    SERVICE
-80/tcp    open     http
-135/tcp   filtered msrpc
-139/tcp   filtered netbios-ssn
-445/tcp   filtered microsoft-ds
-2222/tcp  open     EtherNetIP-1
-10010/tcp open     rxapi
 
-running ubuntu according to mxtoolbox
+just clicked through the site
+
+6. 
+canada and north america dnsdumpster
+
+I followed the steps described in class and on the powerpoint
+
+7. 
+
+running ubuntu according to mxtoolbox and ssh banner
+
+I tried to use nmap for this, but it wasn't plausible what the os was, so I just looked at the ssh banner and confirmed it with mxtoolbox.
+
 8. *(BONUS)*
+
+flag in dump textfiles: CMSC389R-{dns-txt-erc0rd-ftw}
+
+homepage source
+CMSC389R-{h1dden_fl4g_in_s0urce}
 
 ### Part 2 (55 pts)
 
+nmap
+
+PORT      STATE SERVICE
+
+80/tcp    open  http
+
+1337/tcp  open  waste
+
+2222/tcp  open  EtherNetIP-1
+
+10010/tcp open  rxapi
+
 Username: kruegster
+
 Password: pokemon
 
 CMSC389R-{c0rn3rstone-air-27670}
