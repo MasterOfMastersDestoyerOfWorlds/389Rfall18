@@ -1,5 +1,5 @@
 section .text         ;declare this section to be executable instructions
-global _fib            ;export the 'fib' symbol to be accessible outside of file
+global fib            ;export the 'fib' symbol to be accessible outside of file
 
 _fib:                  ;compute the fibonnacci sequence
       mov rcx, rdi    ;move the input argument from rdi to the counter register rcx
