@@ -15,3 +15,5 @@ CMSC389R-{p1ng_as_a_$erv1c3} is the flag that I found in the home directory of t
 
 ### Part 2 (55 pts)
 In order to complete part two I first implemented the menu before the shell with a usage function that prints the help menu, and the shell and the quit functions that control the entry into the machine and the exit of the program. the hardest part of this code was the change directory function, because first You have to deal with multiple levels of a directory that can go forward or backward and second you have to make sure that the directory that you're changing to actually exists. Both of these problems were solved in the main python function of the program.  Additionally in writing the pull command I simply checked if the file existed, then if it did I ran cat on the file and put it to the new local file and If the file on the remote machine didn't exist I printed "remote-path not found". Executing each command was as simple as writing ;cd [directory];[command]\n to the socket and waiting first for the banner and then for the response.
+let divisible v lst = List.rev
+ (foldl (fun a h -> if (h mod v = 0) then (h::a) else a) [ ] lst) 
