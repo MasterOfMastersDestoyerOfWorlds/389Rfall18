@@ -1,8 +1,8 @@
 Writeup 8 - Forensics II, Network Analysis and File Carving/Parsing
 =====
 
-Name: *PUT YOUR NAME HERE*
-Section: *PUT YOUR SECTION HERE*
+Name: Andrew Wollack
+Section: 0201
 
 I pledge on my honor that I have not given or received anyunauthorized assistance on this assignment or examination.
 
@@ -56,15 +56,29 @@ laz0rh4x
 
 3.
 
-Says that it has 9 sections only actually has 8
+Says that it has 9 sections actually has 11
 
 4.
+
+------- HEADER -------
+MAGIC: 0xdeadbeef
+
+VERSION: 1
+
+TIME: 2018-10-24 20:40:07
+
+AUTHOR: laz0rh4x
+
+SECTION COUNT: 9
+
+-------  BODY  -------
+
 
 ASCII SECTION: 
 Call this number to get your flag: (422) 537 - 7946
 
 WORDS SECTION: 
-[(60,), (3,), (1,), (4,), (1,), (5,), (9,), (2,), (6,), (5,), (3,), (5,), (8,), (9,), (7,)]
+[(3,), (1,), (4,), (1,), (5,), (9,), (2,), (6,), (5,), (3,), (5,), (8,), (9,), (7,), (9,)]
 
 COORDINATES SECTION:
 Latitude: 38.991610 , Longitude: -77.027540
@@ -83,9 +97,27 @@ Latitude: 38.991094 , Longitude: -76.932802
 
 PNG SECTION:
  Wrote to: /Users/awollac/Documents/CMSC389R/389Rfall18/week/8/update.fpffpng_8.png
+
+ASCII SECTION: 
+AF(saSAdf1AD)Snz**asd1
+
+ASCII SECTION: 
+Q01TQzM4OVIte2gxZGQzbi1zM2N0MTBuLTFuLWYxbDN9
+
+
+DWORDS SECTION: 
+[(4,), (8,), (15,), (16,), (23,), (42,)]
+
+ACTUAL SECTION COUNT:11
+
+
  
  picture of an airplane with the flag CMSC389R-{c0rn3rst0ne_airlin3s_to_the_m00n}
+ decode base 64 for CMSC389R-{h1dd3n-s3ct10n-1n-f1l3}
+diff checked the wikipedia entry on stegronography CMSC389R-{PIN_IF_FLAG}
 
 5.
 
 CMSC389R-{c0rn3rst0ne_airlin3s_to_the_m00n}
+CMSC389R-{h1dd3n-s3ct10n-1n-f1l3}
+CMSC389R-{PIN_IF_FLAG}

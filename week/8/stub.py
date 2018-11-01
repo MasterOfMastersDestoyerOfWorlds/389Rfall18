@@ -65,7 +65,7 @@ while length_of_sections > 0:
 	elif(stype == 0x2):
 		if(slen%8 == 0):
 			dwords = []
-			for x in range(0,int(slen/8)):
+			for x in range(1,int(slen/8)+1):
 				dword = struct.unpack("<Q", data[offset + (x-1) * 8:offset + x * 8])
 				dwords.append(dword)
 			print("DWORDS SECTION: \n" + repr(dwords) + "\n")
@@ -77,7 +77,7 @@ while length_of_sections > 0:
 	elif(stype == 0x4):
 		if(slen%8 == 0):
 			doubles = []
-			for x in range(0,int(slen/8)):
+			for x in range(1,int(slen/8)+1):
 				double = struct.unpack("<d", data[offset + (x-1) * 8:offset + x * 8])
 				doubles.append(double)
 			print("DOUBLES SECTION: \n" + repr(doubles) + "\n")
@@ -86,7 +86,7 @@ while length_of_sections > 0:
 	elif(stype == 0x5):
 		if(slen%4 == 0):
 			words = []
-			for x in range(0,int(slen/4)):
+			for x in range(1,int(slen/4)+1):
 				word = struct.unpack("<L", data[offset + (x-1) * 4:offset + x * 4])
 				words.append(word)
 			print("WORDS SECTION: \n" + repr(words) + "\n")
@@ -112,7 +112,7 @@ while length_of_sections > 0:
 		print("ASCII SECTION: \n%s\n" % text)
 
 	offset = offset + slen
-	length_of_sections -= offset
+	length_of_sections -= 8+slen
 
 print("ACTUAL SECTION COUNT:%d" % section_count)
 
