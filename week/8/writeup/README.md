@@ -116,7 +116,7 @@ ACTUAL SECTION COUNT:11
  
  decode base 64 for CMSC389R-{h1dd3n-s3ct10n-1n-f1l3}
  
-diff checked the wikipedia entry on stegronography CMSC389R-{PIN_IF_FLAG}
+diff checked the wikipedia entry on stegronography CMSC389R-{PlaIN_dIfF_FLAG}
 
 5.
 
@@ -124,4 +124,4 @@ CMSC389R-{c0rn3rst0ne_airlin3s_to_the_m00n}
 
 CMSC389R-{h1dd3n-s3ct10n-1n-f1l3}
 
-CMSC389R-{PIN_IF_FLAG}
+CMSC389R-{PlaIN_dIfF_FLAG}
